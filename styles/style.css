@@ -1,4 +1,15 @@
 /* Основные стили проекта */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+}
+
+/* Основные стили проекта */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
