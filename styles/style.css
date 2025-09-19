@@ -1,4 +1,14 @@
 /* Основные стили проекта */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+}
+
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -79,11 +89,17 @@
   position: relative;
   z-index: 1;
   color: #FFF;
-  font-size: 100px;
+  font-size: 90px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 1.15;
+  line-height: 1.1;
   letter-spacing: 30px;
+  width: 100%; /* Убеждаемся, что заголовок занимает всю ширину контейнера */
+  text-align: center; /* Центрируем заголовок */
+}
+
+.cover__description {
+  margin-top: 100px; /* Уменьшаем отступ */
 }
 
 .aligned-text {
@@ -241,7 +257,7 @@
   height: 240px;
   border-radius: 50%;
   background-color: #000;
-  margin: 0 auto;
+  margin: 0 auto; /* Центрируем логотип */
 }
 
 .about__logo-image {
@@ -311,14 +327,4 @@
 
 .footer__social-icon {
   width: 100%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
 }
