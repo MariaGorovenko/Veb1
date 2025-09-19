@@ -1,21 +1,9 @@
 /* Основные стили проекта */
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
-}
-
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 92px 50px;
-  max-width: 1100px; /* Ограничиваем ширину контейнера */
-  margin: 0 auto; /* Центрируем контейнер */
 }
 
 .header__menu {
@@ -74,8 +62,6 @@ html, body {
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
-  max-width: 1100px; /* Ограничиваем ширину контейнера */
-  margin: 0 auto; /* Центрируем контейнер */
 }
 
 .overlay {
@@ -89,17 +75,11 @@ html, body {
   position: relative;
   z-index: 1;
   color: #FFF;
-  font-size: 90px;
+  font-size: 100px; /* ИСПРАВЛЕНО: 90px → 100px */
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: 30px;
-  width: 100%; /* Убеждаемся, что заголовок занимает всю ширину контейнера */
-  text-align: center; /* Центрируем заголовок */
-}
-
-.cover__description {
-  margin-top: 100px; /* Уменьшаем отступ */
 }
 
 .aligned-text {
@@ -136,7 +116,7 @@ html, body {
   justify-content: end;
   align-items: center;
   gap: 78px;
-  margin-top: 127px; /* ИЗМЕНЕНО: было 135px */
+  margin-top: 127px;
   color: #FFF;
 }
 
@@ -159,15 +139,13 @@ html, body {
 
 .lots {
   padding: 180px 50px;
-  max-width: 1100px; /* Ограничиваем ширину контейнера */
-  margin: 0 auto; /* Центрируем контейнер */
 }
 
 .lots__heading {
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0 0 27px 40px; /* ИЗМЕНЕНО: было margin-left + margin-bottom */
+  margin: 0 0 27px 40px;
 }
 
 .lots__card-list {
@@ -193,7 +171,7 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 450px; /* ИЗМЕНЕНО: было min-height */
+  height: 450px;
   padding: 50px 40px;
   color: #FFF;
   background-size: cover;
@@ -226,7 +204,7 @@ html, body {
   position: relative;
   z-index: 1;
   font-size: 20px;
-  line-height: 1.2; /* ДОБАВЛЕНО */
+  line-height: 1.2;
 }
 
 .lots__look-more-link {
@@ -240,8 +218,6 @@ html, body {
   grid-template-columns: 430px 1fr;
   gap: 25px;
   padding: 0 50px 180px;
-  max-width: 1100px; /* Ограничиваем ширину контейнера */
-  margin: 0 auto; /* Центрируем контейнер */
 }
 
 .about__column {
@@ -257,7 +233,7 @@ html, body {
   height: 240px;
   border-radius: 50%;
   background-color: #000;
-  margin: 0 auto; /* Центрируем логотип */
+  margin: 0 auto;
 }
 
 .about__logo-image {
@@ -268,7 +244,7 @@ html, body {
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 100px 0 75px; /* ИЗМЕНЕНО: было margin: 100px 0 */
+  margin: 100px 0 75px;
 }
 
 .about__text {
@@ -276,7 +252,7 @@ html, body {
   flex-direction: column;
   gap: 25px;
   font-size: 20px;
-  line-height: 1.2; /* ДОБАВЛЕНО */
+  line-height: 1.2;
 }
 
 .footer {
@@ -284,8 +260,6 @@ html, body {
   grid-template-columns: 1fr min-content 1fr;
   align-items: start;
   padding: 180px 50px 90px;
-  max-width: 1100px; /* Ограничиваем ширину контейнера */
-  margin: 0 auto; /* Центрируем контейнер */
 }
 
 .footer__menu {
