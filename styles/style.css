@@ -116,7 +116,7 @@
   justify-content: end;
   align-items: center;
   gap: 78px;
-  margin-top: 127px;
+  margin-top: 127px; /* ИЗМЕНЕНО: было 135px */
   color: #FFF;
 }
 
@@ -145,7 +145,7 @@
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0 0 27px 40px;
+  margin: 0 0 27px 40px; /* ИЗМЕНЕНО: было margin-left + margin-bottom */
 }
 
 .lots__card-list {
@@ -156,8 +156,8 @@
 }
 
 .lots__card-list-item {
-  flex: 1;
-  min-width: 430px;
+  width: 430px;
+  flex-shrink: 0;
 }
 
 .card-link {
@@ -171,7 +171,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 450px;
+  height: 450px; /* ИЗМЕНЕНО: было min-height */
   padding: 50px 40px;
   color: #FFF;
   background-size: cover;
@@ -204,7 +204,7 @@
   position: relative;
   z-index: 1;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.2; /* ДОБАВЛЕНО */
 }
 
 .lots__look-more-link {
@@ -244,7 +244,7 @@
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 100px 0 75px;
+  margin: 100px 0 75px; /* ИЗМЕНЕНО: было margin: 100px 0 */
 }
 
 .about__text {
@@ -252,14 +252,14 @@
   flex-direction: column;
   gap: 25px;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.2; /* ДОБАВЛЕНО */
 }
 
 .footer {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  align-items: start;
-  padding: 180px 50px 90px;
+  align-items: start; /* ДОБАВЛЕНО */
+  padding: 180px 50px 90px; /* ИЗМЕНЕНО: было 100px 50px 50px */
 }
 
 .footer__menu {
