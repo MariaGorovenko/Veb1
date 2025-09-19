@@ -4,6 +4,8 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 92px 50px;
+  max-width: 1100px; /* Ограничиваем ширину контейнера */
+  margin: 0 auto; /* Центрируем контейнер */
 }
 
 .header__menu {
@@ -62,6 +64,8 @@
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
+  max-width: 1100px; /* Ограничиваем ширину контейнера */
+  margin: 0 auto; /* Центрируем контейнер */
 }
 
 .overlay {
@@ -139,6 +143,8 @@
 
 .lots {
   padding: 180px 50px;
+  max-width: 1100px; /* Ограничиваем ширину контейнера */
+  margin: 0 auto; /* Центрируем контейнер */
 }
 
 .lots__heading {
@@ -218,6 +224,8 @@
   grid-template-columns: 430px 1fr;
   gap: 25px;
   padding: 0 50px 180px;
+  max-width: 1100px; /* Ограничиваем ширину контейнера */
+  margin: 0 auto; /* Центрируем контейнер */
 }
 
 .about__column {
@@ -258,8 +266,10 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  align-items: start; /* ДОБАВЛЕНО */
-  padding: 180px 50px 90px; /* ИЗМЕНЕНО: было 100px 50px 50px */
+  align-items: start;
+  padding: 180px 50px 90px;
+  max-width: 1100px; /* Ограничиваем ширину контейнера */
+  margin: 0 auto; /* Центрируем контейнер */
 }
 
 .footer__menu {
@@ -301,4 +311,14 @@
 
 .footer__social-icon {
   width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
 }
